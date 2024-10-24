@@ -1,0 +1,25 @@
+{
+    "apps": [
+        {
+            "name": "dev-mkt-app",
+            "namespace": "dev-mkt",
+            "watch": true, 
+            "script": "./dist/main.js",
+            "node_args": "--max_old_space_size=2024"
+        },
+        {
+            "name": "dev-mkt-cron",
+            "namespace": "dev-mkt",
+            "watch": true, 
+            "script": "./dist/cron.js",
+            "node_args": "--max_old_space_size=2024"
+        },
+        {
+            "name": "dev-mkt-queue",
+            "namespace": "dev-mkt",
+            "watch": true, 
+            "script": "./dist/queueCLI.js",
+            "node_args": "--max_old_space_size=2024"
+        }
+    ]
+}
